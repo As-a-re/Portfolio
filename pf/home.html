@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="logo">KAY</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <div class="content">
+      <h1>Hello, my name is <span class="name-highlight">Asare Kwaku Obeng</span></h1>
+      <h2>I'm a Software Developer</h2>
+      <p>I specialize in Software development using frameworks such as React, React Native, Electron, Node.js, MongoDB, and I also do a bit of programming using Python.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="me">
+    <img src="./resources/me.jpg" alt="me" class="pic">
+    </div>
+    <div class="theme-colors">
+      <div class="color-palette">
+        <span class="color red"></span>
+        <span class="color blue"></span>
+        <span class="color green"></span>
+        <span class="color purple"></span>
+        <span class="color orange"></span>
+      </div>
+    </div>
+    <div class="container" id="container">
+        <div class="square" id="toggleButton"></div>
+        <div class="icons" id="iconContainer">
+            <div class="icon" onclick="sendMessage('Facebook')">
+                <img src="./resources/facebook.png" alt="Facebook">
+            </div>
+            <div class="icon" onclick="sendMessage('Whatsapp')">
+                <img src="./resources/whatsapp.png" alt="Whatsapp">
+            </div>
+            <div class="icon" onclick="sendMessage('Github')">
+                <img src="./resources/github.png" alt="Github">
+            </div>
+            <div class="icon" onclick="sendMessage('LinkedIn')">
+                <img src="./resources/linkedin.png" alt="LinkedIn">
+            </div>
+        </div>
+        </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Asare Kwaku Obeng, a passionate software developer with a Bachelor of Science</p>
+    <p>degree in Information Technology from the University of Ghana. With a strong foundation in</p>
+    <p>IT and years of hands-on experience I've honed my skills in creating efficient, scalable, and user-friendly software solutions.</p>
+    <p>I am a passionate software developer with extensive experience in web and mobile application development.</p>
+    <p>I love building applications that solve real-world problems using technologies like React, Node.js, and Python</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="./resources/react.png" alt="react" class="log"></div>
+      <div class="skill-card"><img src="./resources/native.png" alt="react-native" class="log"></div>
+      <div class="skill-card"><img src="./resources/electron.jpg" alt="electron" class="log"></div>
+      <div class="skill-card"><img src="./resources/node.png" alt="node" class="log"></div>
+      <div class="skill-card"><img src="./resources/mongo.png" alt="mongo" class="log"></div>
+      <div class="skill-card"><img src="./resources/python.png" alt="python" class="log"></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="gallery">
+        <div class="image-container" tabindex="0">
+            <img src="./resources/pentest.png" alt="Image 1">
+        </div>
+        <div class="image-container" tabindex="0">
+            <img src="./resources/church.png" alt="Image 2">
+        </div>
+        <div class="image-container" tabindex="0">
+            <img src="./resources/oa.png" alt="Image 3">
+        </div>
+        <div class="image-container" tabindex="0">
+            <img src="./resources/ce.png" alt="Image 4">
+        </div>
+        <div class="image-container" tabindex="0">
+            <img src="./resources/phone.png" alt="Image 4">
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form action="#" class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 KAY solutions</p>
+  </footer>
+
+<script>
+        const container = document.getElementById('container');
+        const toggleButton = document.getElementById('toggleButton');
+
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            container.classList.add('expanded');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!container.contains(e.target)) {
+                container.classList.remove('expanded');
+            }
+        });
+
+        function sendMessage(platform) {
+            alert(`Sending message on ${platform}!`);
+            container.classList.remove('expanded');
+        }
+    </script>
+
+</body>
+</html>
