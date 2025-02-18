@@ -399,6 +399,7 @@
             .hero, .about {
                 grid-template-columns: 1fr;
                 text-align: center;
+                margin-top: 10vh;
             }
 
             .social-links {
