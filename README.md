@@ -1,2 +1,3 @@
-# This is a portfolio for me
-# ![image](https://github.com/user-attachments/assets/0ad08ad6-1797-4f7e-b8bb-b81847a68775)
+# This is my portfolio website
+
+#![Screenshot 2025-02-18 101814](https://github.com/user-attachments/assets/88f98d4c-5368-439a-af6a-c9710fac4a57)
