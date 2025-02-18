@@ -8,137 +8,233 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <div class="logo">KAY</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <div class="logo">Portfolio<span>.</span></div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="section home">
-    <div class="content">
-      <h1>Hello, my name is <span class="name-highlight">Asare Kwaku Obeng</span></h1>
-      <h2>I'm a Software Developer</h2>
-      <p>I specialize in Software development using frameworks such as React, React Native, Electron, Node.js, MongoDB, and I also do a bit of programming using Python.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-    <div class="me">
-    <img src="./resources/me.jpg" alt="me" class="pic">
-    </div>
-    <div class="theme-colors">
-      <div class="color-palette">
-        <span class="color red"></span>
-        <span class="color blue"></span>
-        <span class="color green"></span>
-        <span class="color purple"></span>
-        <span class="color orange"></span>
-      </div>
-    </div>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hello, It's Me</h1>
+            <h2>Asare Kwaku Obeng</h2>
+            <h2>And I'm a <span class="highlight">Software Engineer</span></h2>
+            <p>Welcome to my personal space! I specialize in creating dynamic and responsive web applications that provide an exceptional user experience. With a passion for design and a keen eye for detail, I strive to bring my clients' visions to life through clean and efficient code.</p>
+            <div class="social-links">
+                <a href="#"><i>f</i></a>
+                <a href="#"><i>t</i></a>
+                <a href="#"><i>in</i></a>
+                <a href="#"><i>g</i></a>
+            </div>
+            <a href="./resume.pdf" class="cta-button">Download CV</a>
+        </div>
+        <div class="hero-image">
+            <div class="hexagon-frame">
+                <div class="hex-border"></div>
+                <img src="./i.jpg" alt="Asare Kwaku Obeng">
+            </div>
+        </div>
+    </section>
+
     <div class="container" id="container">
-        <div class="square" id="toggleButton"></div>
-        <div class="icons" id="iconContainer">
-            <div class="icon" onclick="sendMessage('Facebook')">
-                <img src="./resources/facebook.png" alt="Facebook">
-            </div>
-            <div class="icon" onclick="sendMessage('Whatsapp')">
-                <img src="./resources/whatsapp.png" alt="Whatsapp">
-            </div>
-            <div class="icon" onclick="sendMessage('Github')">
-                <img src="./resources/github.png" alt="Github">
-            </div>
-            <div class="icon" onclick="sendMessage('LinkedIn')">
-                <img src="./resources/linkedin.png" alt="LinkedIn">
-            </div>
-        </div>
-        </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Asare Kwaku Obeng, a passionate software developer with a Bachelor of Science</p>
-    <p>degree in Information Technology from the University of Ghana. With a strong foundation in</p>
-    <p>IT and years of hands-on experience I've honed my skills in creating efficient, scalable, and user-friendly software solutions.</p>
-    <p>I am a passionate software developer with extensive experience in web and mobile application development.</p>
-    <p>I love building applications that solve real-world problems using technologies like React, Node.js, and Python</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><img src="./resources/react.png" alt="react" class="log"></div>
-      <div class="skill-card"><img src="./resources/native.png" alt="react-native" class="log"></div>
-      <div class="skill-card"><img src="./resources/electron.jpg" alt="electron" class="log"></div>
-      <div class="skill-card"><img src="./resources/node.png" alt="node" class="log"></div>
-      <div class="skill-card"><img src="./resources/mongo.png" alt="mongo" class="log"></div>
-      <div class="skill-card"><img src="./resources/python.png" alt="python" class="log"></div>
+  <div class="square" id="toggleButton"></div>
+  <div class="icons" id="iconContainer">
+    <div class="icon" onclick="sendMessage('Facebook')">
+      <img src="./resources/facebook.png" alt="Facebook">
     </div>
-  </section>
+    <div class="icon" onclick="sendMessage('Whatsapp')">
+      <img src="./resources/whatsapp.png" alt="Whatsapp">
+    </div>
+    <div class="icon" onclick="sendMessage('Github')">
+      <img src="./resources/github.png" alt="Github">
+    </div>
+    <div class="icon" onclick="sendMessage('LinkedIn')">
+      <img src="./resources/linkedin.png" alt="LinkedIn">
+    </div>
+  </div>
+</div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="gallery">
-        <div class="image-container" tabindex="0">
-            <img src="./resources/pentest.png" alt="Image 1">
+    <section class="tools" id="tools">
+    <h2>Tools & <span class="highlight">Frameworks</span></h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>Git</h3>
         </div>
-        <div class="image-container" tabindex="0">
-            <img src="./resources/church.png" alt="Image 2">
+        <div class="tool-card">
+            <h3>React</h3>
         </div>
-        <div class="image-container" tabindex="0">
-            <img src="./resources/oa.png" alt="Image 3">
+        <div class="tool-card">
+            <h3>React Native</h3>
         </div>
-        <div class="image-container" tabindex="0">
-            <img src="./resources/ce.png" alt="Image 4">
+        <div class="tool-card">
+            <h3>Express</h3>
         </div>
-        <div class="image-container" tabindex="0">
-            <img src="./resources/phone.png" alt="Image 4">
+        <div class="tool-card">
+            <h3>Node.js</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Python</h3>
+        </div>
+        <div class="tool-card">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Next.js</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Flutter</h3>
+        </div>
+        <div class="tool-card">
+            <h3>HTML & CSS</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Tailwind CSS</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Mongo</h3>
+        </div>
+        <div class="tool-card">
+            <h3>MYSQL</h3>
+        </div>
+        <div class="tool-card">
+            <h3>Electron</h3>
         </div>
     </div>
-  </section>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <form action="#" class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section class="about" id="about">
+        <div class="hexagon-frame">
+            <div class="hex-border"></div>
+            <img src="./i.jpg" alt="About Me">
+        </div>
+        <div class="about-content">
+            <h2>About <span class="highlight">Me</span></h2>
+            <h3>Software Engineer!</h3>
+            <p>I am a passionate Software Engineer with a strong focus on creating dynamic and user-friendly web applications. With a background in computer science and a love for design, I thrive on transforming ideas into beautiful, functional softwares. My expertise lies in HTML, CSS, and JavaScript, Reactjs, Nextjs, Flutter and a list of JavaScript Frameworks and <span id="more-text" style="display:none;">I am always eager to learn new technologies and frameworks to enhance my skill set. Outside of coding, I enjoy exploring the latest design trends, collaborating on innovative projects, and contributing to open-source communities. I believe in the power of clean code and strive to create seamless experiences for users.</span> Let's connect and build something amazing together!<span id="dots">...</span></p>
+            <a href="javascript:void(0)" id="read-more" class="cta-button">Read More</a>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2024 KAY solutions</p>
-  </footer>
+    <section class="services" id="services">
+        <h2>My <span class="highlight">Services</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">&lt;/&gt;</div>
+                <h3>Web Development</h3>
+                <p>Creating responsive and dynamic websites tailored to your business needs. Utilizing the latest technologies and frameworks, I ensure your site is not only visually appealing but also functional and user-friendly.</p>
+                <br><a href="#" class="cta-button">View Projects</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">&lt;/&gt;</div>
+                <h3>Desktop App Development</h3>
+                <p>Building robust desktop applications that enhance productivity and streamline workflows. I specialize in creating cross-platform solutions that are easy to use and can be deployed across various operating systems.</p>
+                <br><a href="#" class="cta-button">View Projects</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">&lt;/&gt;</div>
+                <h3>Mobile App Development</h3>
+                <p>Designing and developing intuitive mobile applications for both iOS and Android platforms. My focus is on delivering seamless user experiences, integrating advanced features, and ensuring high performance across devices.</p>
+                <br><a href="#" class="cta-button">View Projects</a>
+            </div>
+        </div>
+    </section>
 
-<script>
-        const container = document.getElementById('container');
-        const toggleButton = document.getElementById('toggleButton');
+    <section class="projects" id="portfolio">
+        <h2>Latest <span class="highlight">Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./pentest.png" alt="Project 1">
+            </div>
+            <div class="project-card">
+                <img src="./oa.png" alt="Project 2">
+            </div>
+            <div class="project-card">
+                <img src="./phone.png" alt="Project 3">
+            </div>
+            <div class="project-card">
+                <img src="./ce.png" alt="Project 4">
+            </div>
+            <div class="project-card">
+                <img src="./church.png" alt="Project 5">
+            </div>
+            <div class="project-card">
+                <img src="./drive.png" alt="Project 6">
+            </div>
+        </div>
+    </section>
 
-        toggleButton.addEventListener('click', (e) => {
-            e.stopPropagation();
-            container.classList.add('expanded');
-        });
+    <section class="contact" id="contact">
+        <h2>Contact <span class="highlight">Me!</span></h2>
+        <form class="contact-form" action="mailto:asare220044@gmail.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+            <input type="tel" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-        document.addEventListener('click', (e) => {
-            if (!container.contains(e.target)) {
-                container.classList.remove('expanded');
-            }
-        });
+    <footer>
+        <p>Copyright © 2024 by KAY | All Rights Reserved</p>
+    </footer>
 
-        function sendMessage(platform) {
-            alert(`Sending message on ${platform}!`);
-            container.classList.remove('expanded');
+    <script>
+    document.getElementById("read-more").addEventListener("click", function() {
+        var moreText = document.getElementById("more-text");
+        var dots = document.getElementById("dots");
+        var btnText = this;
+
+        if (moreText.style.display === "none") {
+            moreText.style.display = "inline";
+            dots.style.display = "none";
+            btnText.innerHTML = "Read Less"; // Change button text
+        } else {
+            moreText.style.display = "none";
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read More"; // Change button text back
         }
-    </script>
+    });
 
+    const container = document.getElementById('container');
+const toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', (e) => {
+  e.stopPropagation();
+  container.classList.add('expanded');
+});
+
+document.addEventListener('click', (e) => {
+  if (!container.contains(e.target)) {
+    container.classList.remove('expanded');
+  }
+});
+
+function sendMessage(platform) {
+  let url;
+  switch(platform) {
+    case 'Facebook':
+      url = 'https://www.facebook.com/yourprofile';
+      break;
+    case 'Whatsapp':
+      url = 'https://wa.me/+2330595325421';
+      break;
+    case 'Github':
+      url = 'https://github.com/As-a-re';
+      break;
+    case 'LinkedIn':
+      url = 'https://www.linkedin.com/in/yourprofile';
+      break;
+  }
+  if (url) {
+    window.open(url, '_blank');
+  }
+}
+</script>
 </body>
 </html>
